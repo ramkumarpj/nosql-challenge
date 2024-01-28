@@ -95,6 +95,35 @@ The results were converted to a panda dataframe and total number of rows in the 
 [View Result](./US_Food_Ratings/Output/establishments_by_local_authority_hyg0.csv)
 
 
+## Files
+* Source Code:
+    1. UK_Food_Ratings/uk_food_ratings_setup.ipynb
+    2. UK_Food_Ratings/uk_food_ratings_analysis.ipynb
+* Dataset:
+    1. UK_Food_Ratings/Resources/establishments.json
+* Output:
+  1. hygiene_score20.csv
+  2. london_rating_gt4.csv
+  3. top_establishments_near_penang_flavors.csv
+  4. establishments_by_local_authority_hyg0.csv
+  
+## Run Instructions
+* Open a terminal
+* Import data to MongoDB, Run following command from UK_Food_Ratings/Resources directory
+* mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json
+* Confirm condo version\
+  conda --version
+* Confirm jupyter version\
+  jupyter --version
+* Activate conda environment\
+  conda activate dev
+* Launch Jupyter Notebook\
+  jupyter notebook
+* Jupyter Notebook is opened in a browser
+* Open "UK_Food_Ratings/uk_food_ratings_setup.ipynb" file using Jupyter Notebook
+* Click on 'Cell > Run All' to run
+* Open "UK_Food_Ratings/uk_food_ratings_analysis.ipynb" file using Jupyter Notebook
+* Click on 'Cell > Run All' to run
 
 
 # Disclaimer
